@@ -6,7 +6,7 @@
     <title>TP HTML</title>
 </head>
 <body>
-    <div>
+    <div id="1">
         <h1>1. Estructura Básica del Documento HTML</h1>
         <p>Este documento HTML tiene una estructura básica 
             que incluye la declaración de DOCTYPE, etiquetas
@@ -14,7 +14,7 @@
         </p>
     </div>
 
-    <div>
+    <div id="2">
         <h2>2. Encabezados y Propiedades del Texto</h2>
         <p><b style="font-size: large;"">Este es un texto en negrita.</b> </p>
         <p><em style="font-size: large;">Este es un texto en cursiva.</em> </p>
@@ -22,7 +22,7 @@
         
     </div>
 
-    <div>
+    <div id="3">
         <h2>3. División y Agrupación de Contenido</h2>
         <div>
             <h3>Sección 1</h3>
@@ -34,14 +34,14 @@
         </div>
     </div>
 
-    <div>
+    <div id="4">
         <h2>4. Enlaces y Listas</h2>
         <p> visita nuestro <a href="https://www.w3schools.com/html/html_intro.asp">sitio web</a> para más información</p>
 
         <ul>
-            <li><a href="https://www.w3schools.com/html/html_intro.asp">Ir a Estructura Básica del Documento HTML</a></li>
-            <li><a href="https://www.w3schools.com/html/html_intro.asp">Ir a División y Agrupación de Contenido</a></li>
-            <li><a href="https://www.w3schools.com/html/html_intro.asp">Ir a Elementos Multimedia</a></li>
+            <li><a href="#1">Ir a Estructura Básica del Documento HTML</a></li>
+            <li><a href="#3">Ir a División y Agrupación de Contenido</a></li>
+            <li><a href="#5">Ir a Elementos Multimedia</a></li>
         </ul>
 
         <ul>
@@ -54,29 +54,47 @@
             <li>Segundo item de una lista ordenada</li>
         </ol>
     </div>
+
     
-    <div>
+
+    <div id="5">
         <h2>5. Elementos Multimedia</h2>
+
+
         <img src="https://boxdiario.com.ar/wp-content/uploads/2024/01/image-430.png"
             alt="No me quemes"
             width="200px"
             height="150px"
         />
 
-        <iframe width="178" height="317" src="https://www.youtube.com/embed/Ien8Jdamcjw" 
-        title="no me quemes por favor tengo dos pibes" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         <video 
             src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
             controls
             width="200px"
             height="150px">
+        /> </video>
+
+        <audio
+            src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+            controls
         />
-
-
+        
+    </div>
+    <!--
+    <audio
+        src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+        controls
+    />
+    -->
+    <div>
+        <h2>6. Tablas</h2>
+        
+    </div>
     
+    <div>
+        <h2>7. Formularios</h2>
+        
+    </div>
+
 </body>
 </html>
