@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td,tr,th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+    </style>
 </head>
 <body>
     <div id="1">
@@ -16,7 +26,7 @@
 
     <div id="2">
         <h2>2. Encabezados y Propiedades del Texto</h2>
-        <p><b style="font-size: large;"">Este es un texto en negrita.</b> </p>
+        <p><b style="font-size: large;">Este es un texto en negrita.</b> </p>
         <p><em style="font-size: large;">Este es un texto en cursiva.</em> </p>
         <p><u style="font-size: large;">Este es un texto subrayado.</u> </p>
         
@@ -60,7 +70,6 @@
     <div id="5">
         <h2>5. Elementos Multimedia</h2>
 
-
         <img src="https://boxdiario.com.ar/wp-content/uploads/2024/01/image-430.png"
             alt="No me quemes"
             width="200px"
@@ -78,22 +87,48 @@
             src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
             controls
         />
-        
+
     </div>
-    <!--
-    <audio
-        src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
-        controls
-    />
-    -->
+
     <div>
         <h2>6. Tablas</h2>
-        
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
     </div>
     
     <div>
         <h2>7. Formularios</h2>
-        
+        <form>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre completo"/>
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com"/>
+            <label>Mensaje</label>
+            <input type="text" placeholder="Ingrese su mensaje"/>
+
+            <button type="submit">Enviar</button>
+        </form>
+
     </div>
 
 </body>
