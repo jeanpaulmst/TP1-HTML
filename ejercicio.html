@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,124 +13,156 @@
             padding: 5px;
             border: 1px solid black;
         }
+        section, article {
+            margin-top: 50px;
+        }
 
     </style>
 </head>
+
 <body>
-    <div id="1">
-        <h1>1. Estructura Básica del Documento HTML</h1>
-        <p>Este documento HTML tiene una estructura básica 
-            que incluye la declaración de DOCTYPE, etiquetas
-            de metadatos y un título.
-        </p>
-    </div>
 
-    <div id="2">
-        <h2>2. Encabezados y Propiedades del Texto</h2>
-        <p><b style="font-size: large;">Este es un texto en negrita.</b> </p>
-        <p><em style="font-size: large;">Este es un texto en cursiva.</em> </p>
-        <p><u style="font-size: large;">Este es un texto subrayado.</u> </p>
+    <header>
+        <h1>TP HTML - Masuet Juan Pablo</h1>
+    </header>
+
+    <main>
+        <section id="1">
+            
+            <h2>1. Estructura Básica del Documento HTML</h1>
+            <p>Este documento HTML tiene una estructura básica 
+                que incluye la <span style="color:blue; font-weight: bold;">declaración de DOCTYPE</span>, etiquetas
+                de metadatos y un título.
+            </p>
         
-    </div>
+        </section>
 
-    <div id="3">
-        <h2>3. División y Agrupación de Contenido</h2>
-        <div>
-            <h3>Sección 1</h3>
-            <p>Contenido de la primera sección agrupada en un div</p>
-        </div>
-        <div>
-            <h3>Sección 2</h3>
-            <p>Contenido de la segunda sección agrupada en un div</p>
-        </div>
-    </div>
+        <section id="2">
 
-    <div id="4">
-        <h2>4. Enlaces y Listas</h2>
-        <p> visita nuestro <a href="https://www.w3schools.com/html/html_intro.asp">sitio web</a> para más información</p>
+            <h2>2. Encabezados y Propiedades del Texto</h2>
+            <p><b style="font-size: large;">Este es un texto en negrita.</b> </p>
+            <p><em style="font-size: large;">Este es un texto en cursiva.</em> </p>
+            <p><u style="font-size: large;">Este es un texto subrayado.</u> </p>
+            
+        </section>
 
-        <ul>
-            <li><a href="#1">Ir a Estructura Básica del Documento HTML</a></li>
-            <li><a href="#3">Ir a División y Agrupación de Contenido</a></li>
-            <li><a href="#5">Ir a Elementos Multimedia</a></li>
-        </ul>
+        <section id="3">
 
-        <ul>
-            <li>Primer item de una lista desordenada</li>
-            <li>Segundo item de una lista desordenada</li>
-        </ul>
+            <h2>3. División y Agrupación de Contenido</h2>
+            <div>
+                <h3>Sección 1 (con h3)</h3>
+                <p>Contenido de la primera sección agrupada en un div</p>
+            </div>
+            <div>
+                <h4>Sección 2 (con h4)</h4>
+                <p>Contenido de la segunda sección agrupada en un div</p>
+            </div>
 
-        <ol>
-            <li>Primer item de una lista ordenada</li>
-            <li>Segundo item de una lista ordenada</li>
-        </ol>
-    </div>
+        </section>
 
-    
+        <section id="4">
 
-    <div id="5">
-        <h2>5. Elementos Multimedia</h2>
+            <h2>4. Enlaces y Listas</h2>
+            <p> visita nuestro <a href="https://www.w3schools.com/html/html_intro.asp">sitio web</a> para más información</p>
 
-        <img src="https://boxdiario.com.ar/wp-content/uploads/2024/01/image-430.png"
-            alt="No me quemes"
-            width="200px"
-            height="150px"
-        />
+            <ul>
+                <li><a href="#1">Ir a Estructura Básica del Documento HTML</a></li>
+                <li><a href="#3">Ir a División y Agrupación de Contenido</a></li>
+                <li><a href="#5">Ir a Elementos Multimedia</a></li>
+            </ul>
 
-        <video 
-            src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
-            controls
-            width="200px"
-            height="150px">
-        /> </video>
+            <ul>
+                <li>Primer item de una lista desordenada</li>
+                <li>Segundo item de una lista desordenada</li>
+            </ul>
 
-        <audio
-            src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
-            controls
-        />
+            <ol>
+                <li>Primer item de una lista ordenada</li>
+                <li>Segundo item de una lista ordenada</li>
+            </ol>
 
-    </div>
+        </section>
 
-    <div>
-        <h2>6. Tablas</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Columna 1</th>
-                    <th>Columna 2</th>
-                </tr>
-            </thead>
+        <section id="5">
 
-            <tbody>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                </tr>
-                <tr>
-                    <td>Dato 3</td>
-                    <td>Dato 4</td>
-                </tr>
-            </tbody>
-            <tfoot>
+            <h2>5. Elementos Multimedia</h2>
 
-            </tfoot>
-        </table>
-    </div>
-    
-    <div>
-        <h2>7. Formularios</h2>
-        <form>
-            <label>Nombre</label>
-            <input type="text" placeholder="Nombre completo"/>
-            <label>Email</label>
-            <input type="email" placeholder="example@gmail.com"/>
-            <label>Mensaje</label>
-            <input type="text" placeholder="Ingrese su mensaje"/>
+            <img src="https://boxdiario.com.ar/wp-content/uploads/2024/01/image-430.png"
+                alt="No me quemes"
+                width="200px"
+                height="150px"
+            />
 
-            <button type="submit">Enviar</button>
-        </form>
+            <video 
+                src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+                controls
+                width="200px"
+                height="150px">
+            /> </video>
 
-    </div>
+            <audio
+                src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+                controls
+            />
+
+        </section>
+
+        <section id="6">
+
+            <h2>6. Tablas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+
+        </section>
+
+        <section id="7">
+            <h2>7. Formularios</h2>
+            <form>
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre completo"/>
+                <label>Email</label>
+                <input type="email" placeholder="example@gmail.com"/>
+                <label>Ingrese su mensaje</label>
+                <textarea placeholder="Mensaje aquí"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+
+        <article>
+            <p>Esto es un articulo...
+                bla, bla, bla
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Esto es un pie de página y <a href="https://chatgpt.com/">este es un link para ir a chatgpt</a></p>
+        
+    </footer>
 
 </body>
+
 </html>
